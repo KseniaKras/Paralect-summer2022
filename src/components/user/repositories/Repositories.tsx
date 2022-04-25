@@ -10,6 +10,7 @@ import {
     selectRepoPageSize,
 } from "../../../selectors/RepositorySelectors";
 import {getRepositories} from "../../../redux/reducers/RepositoryReducer";
+import {CalcItemsOnPage} from "../../../utils/CalcItemsOnPage";
 
 
 type RepositoriesPropsType = {
@@ -57,6 +58,8 @@ export const Repositories: FC<RepositoriesPropsType> = ({login}) => {
                             {reposElements}
                         </div>
                         <div className={s.pagination}>
+                            {/*@ts-ignore*/}
+
                             <PaginationRounded
                                 repositoriesCount={repositoriesCount}
                                 pageSize={pageSize}

@@ -1,18 +1,16 @@
-import React, {FC} from 'react';
+import React from 'react';
 import s from './User.module.scss'
 import {Repositories} from "./repositories/Repositories";
 import {UserInformation} from "./userInformation/UserInformation";
 import user from "../../common/images/icons/user.png"
 import {useAppSelector} from "../../hooks/Hooks";
 import {InitialView} from "../initialScreenView/InitialView";
-import {selectIsUser} from "../../selectors/UserSelectors";
+import {selectIsUser, selectUserLoginName} from "../../selectors/UserSelectors";
 
 
-type UserPropsType = {
-    userLogin: string
-}
-export const User: FC<UserPropsType> = ({userLogin}) => {
+export const User = () => {
 
+    const userLogin = useAppSelector(selectUserLoginName)
     const isUser = useAppSelector(selectIsUser)
 
     return (

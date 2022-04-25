@@ -5,19 +5,19 @@ import {InitialView} from "../components/initialScreenView/InitialView";
 import user from "../common/images/icons/user.png";
 import {User} from "../components/user/User";
 import {useAppSelector} from "../hooks/Hooks";
-import {selectUserLoginName} from "../selectors/UserSelectors";
+import {selectIsInitialized} from "../selectors/AppSelectors";
 
 
 function App() {
 
-    const userLogin = useAppSelector(selectUserLoginName)
+    const isInitialized = useAppSelector(selectIsInitialized)
 
     return (
         <div className="App">
             <Header/>
             {
-                userLogin
-                    ? <User userLogin={userLogin}/>
+                isInitialized
+                    ? <User/>
                     : <InitialView
                         image={user}
                         text={'Start with searching a GitHub user'}

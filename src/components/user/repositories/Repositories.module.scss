@@ -35,6 +35,15 @@
     position: fixed;
     bottom: 28.5px;
     right: 69px;
+    display: inline-flex;
+    align-items: center;
+
+    .paginationInfoText {
+      font-size: 14px;
+      line-height: 21px;
+      color: #808080;
+      margin-right: 23.59px;
+    }
   }
 }
 
