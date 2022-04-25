@@ -1,0 +1,14 @@
+
+.followersBlock {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  > img {
+    margin-right: 9px;
+  }
+
+  > span {
+      margin-right: 20px;
+  }
+}

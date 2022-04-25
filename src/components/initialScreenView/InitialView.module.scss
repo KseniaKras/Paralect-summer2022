@@ -1,0 +1,36 @@
+.initialBlock {
+  width: 100%;
+  max-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    margin-top: 219.92px;
+    width: 64.17px;
+    height: 64.17px;
+  }
+
+  > span {
+    margin-top: 46.92px;
+    width: 210px;
+    height: 62px;
+    font-size: 22px;
+    line-height: 30.8px;
+    color: #808080;
+
+  }
+}
+
+
+@media (min-width: 300px) and (max-width: 770px) {
+  .initialBlock {
+    padding: 20px;
+
+    .image {
+      margin-top: 70px;
+    }
+  }
+}

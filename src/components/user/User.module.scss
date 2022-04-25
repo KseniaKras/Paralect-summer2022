@@ -1,0 +1,10 @@
+
+.userBlock {
+  display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 770px) {
+  .userBlock {
+    flex-direction: column;
+  }
+}
