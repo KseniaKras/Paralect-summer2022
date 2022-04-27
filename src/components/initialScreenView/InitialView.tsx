@@ -1,5 +1,5 @@
 import React, {FC} from "react";
-import s from './InitialView.module.scss'
+import s from './InitialView.module.scss';
 
 type InitialViewPropsType = {
     text: string

@@ -1,8 +1,8 @@
 import React from 'react';
-import s from './User.module.scss'
+import s from './User.module.scss';
 import {Repositories} from "./repositories/Repositories";
 import {UserInformation} from "./userInformation/UserInformation";
-import user from "../../common/images/icons/user.png"
+import userIcon from "../../common/images/icons/userIcon.png";
 import {useAppSelector} from "../../hooks/Hooks";
 import {InitialView} from "../initialScreenView/InitialView";
 import {selectIsUser, selectUserLoginName} from "../../selectors/UserSelectors";
@@ -21,7 +21,7 @@ export const User = () => {
                         <UserInformation login={userLogin}/>
                         <Repositories login={userLogin}/>
                     </div>
-                    : <InitialView text={'User not found'} image={user}/>
+                    : <InitialView text={'User not found'} image={userIcon}/>
             }
 
         </>
