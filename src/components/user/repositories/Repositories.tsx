@@ -27,7 +27,7 @@ export const Repositories: FC<RepositoriesPropsType> = ({login}) => {
         if (login) {
             dispatch(getRepositories(login, 1, pageSize))
         }
-    }, [dispatch, login])
+    }, [dispatch, login, pageSize])
 
     const reposElements = repositories && repositories.map(r => {
         return (
