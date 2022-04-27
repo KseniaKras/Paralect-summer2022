@@ -1,6 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent, FC, useState} from 'react';
 import s from './Header.module.scss';
-import githubLogo from '../../common/images/githubLogo.png';
+import github from '../../common/images/github.png';
 import loupe from '../../common/images/loupe.png';
 import {useAppDispatch, useAppSelector} from "../../hooks/Hooks";
 import LinearProgress from "@mui/material/LinearProgress";
@@ -31,7 +31,7 @@ export const Header: FC = () => {
     return (
         <div className={s.headerBlock}>
             <span className={s.iconBlock}>
-                <img src={githubLogo} alt="GithubLogo" className={s.logo}/>
+                <img src={github} alt="GithubLogo" className={s.logo}/>
             </span>
             <div className={s.searchBlock}>
                 <img src={loupe} alt="search" className={s.loupe}/>

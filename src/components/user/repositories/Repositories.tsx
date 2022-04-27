@@ -1,7 +1,7 @@
 import React, {FC, useEffect} from "react";
 import s from "./Repositories.module.scss";
 import {InitialView} from "../../initialScreenView/InitialView";
-import emptyIcon from "../../../common/images/empty.png";
+import empty from "../../../common/images/empty.png";
 import {useAppDispatch, useAppSelector} from "../../../hooks/Hooks";
 import {PaginationRounded} from "../../pagination/PaginationRounded";
 import {
@@ -45,7 +45,7 @@ export const Repositories: FC<RepositoriesPropsType> = ({login}) => {
             {
                 repositoriesCount === 0
                     ? <InitialView
-                        image={emptyIcon}
+                        image={empty}
                         text={'Repository list is empty'}
                     />
 

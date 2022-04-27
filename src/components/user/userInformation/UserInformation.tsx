@@ -1,8 +1,8 @@
 import React, {FC, useEffect} from 'react';
 import s from "./UserInformation.module.scss";
 import {UserFollowers} from "./userFollowers/UserFollowers";
-import followersIcon from "../../../common/images/followers.png";
-import followingIcon from "../../../common/images/followings.png";
+import followers from "../../../common/images/followers.png";
+import followings from "../../../common/images/followings.png";
 import {useAppDispatch, useAppSelector} from "../../../hooks/Hooks";
 import {
     selectUserAvatar,
@@ -51,12 +51,12 @@ export const UserInformation: FC<UserInfoPropsType> = ({login}) => {
             </a>
             <div className={s.followersBlock}>
                 <UserFollowers
-                    image={followersIcon}
+                    image={followers}
                     count={userFollowers}
                     description={'followers'}
                 />
                 <UserFollowers
-                    image={followingIcon}
+                    image={followings}
                     count={userFollowing}
                     description={'following'}
                 />
