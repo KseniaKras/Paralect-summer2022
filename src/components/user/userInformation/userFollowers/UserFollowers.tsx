@@ -6,7 +6,7 @@ type UserFollowingsPropsType = {
     count: number | undefined
     description: string
 }
-export const UserFollowers : FC<UserFollowingsPropsType> = ({image, count, description}) => {
+export const UserFollowers: FC<UserFollowingsPropsType> = ({image, count, description}) => {
 
     if (count && count >= 1000) {
         count = +(count / 1000).toFixed(1)

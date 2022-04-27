@@ -1,10 +1,9 @@
-
 const initialState = {
     isLoading: false,
     isInitialized: false
 }
 
-export const appReducer = (state: InitialStateType = initialState, action: AppReducerActionsType):InitialStateType => {
+export const appReducer = (state: InitialStateType = initialState, action: AppReducerActionsType): InitialStateType => {
     switch (action.type) {
         case "SET-IS-LOADING":
         case "SET-IS-INITIALIZED":
@@ -23,12 +22,14 @@ export const setIsLoading = (isLoading: boolean) => ({
     type: "SET-IS-LOADING",
     payload: {
         isLoading
-    }} as const)
+    }
+} as const)
 export const setIsInitialized = (isInitialized: boolean) => ({
     type: "SET-IS-INITIALIZED",
     payload: {
         isInitialized
-    }} as const)
+    }
+} as const)
 
 
 //types

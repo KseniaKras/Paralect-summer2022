@@ -32,12 +32,14 @@ export const setUser = (user: GetUserResponseType) => ({
     type: 'SET-USER',
     payload: {
         user
-    }} as const)
+    }
+} as const)
 export const setIsUser = (isUser: boolean) => ({
     type: 'SET-IS-USER',
     payload: {
         isUser
-    }} as const)
+    }
+} as const)
 
 
 //thunk
