@@ -1,7 +1,7 @@
 import React, {FC, useEffect} from "react";
 import s from "./Repositories.module.scss";
 import {InitialView} from "../../initialScreenView/InitialView";
-import emptyIcon from "../../../common/images/icons/empty.png";
+import emptyIcon from "../../../common/images/empty.png";
 import {useAppDispatch, useAppSelector} from "../../../hooks/Hooks";
 import {PaginationRounded} from "../../pagination/PaginationRounded";
 import {

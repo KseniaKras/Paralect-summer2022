@@ -2,7 +2,7 @@ import React from 'react';
 import s from './User.module.scss';
 import {Repositories} from "./repositories/Repositories";
 import {UserInformation} from "./userInformation/UserInformation";
-import userIcon from "../../common/images/icons/userIcon.png";
+import userIcon from "../../common/images/userIcon.png";
 import {useAppSelector} from "../../hooks/Hooks";
 import {InitialView} from "../initialScreenView/InitialView";
 import {selectIsUser, selectUserLoginName} from "../../selectors/UserSelectors";

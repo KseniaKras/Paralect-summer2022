@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import {Header} from "../components/header/Header";
 import {InitialView} from "../components/initialScreenView/InitialView";
-import user from "../common/images/icons/userIcon.png";
+import user from "../common/images/userIcon.png";
 import {User} from "../components/user/User";
 import {useAppSelector} from "../hooks/Hooks";
 import {selectIsInitialized} from "../selectors/AppSelectors";

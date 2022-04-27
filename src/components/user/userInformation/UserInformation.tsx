@@ -1,8 +1,8 @@
 import React, {FC, useEffect} from 'react';
 import s from "./UserInformation.module.scss";
 import {UserFollowers} from "./userFollowers/UserFollowers";
-import followersIcon from "../../../common/images/icons/followers.png";
-import followingIcon from "../../../common/images/icons/followings.png";
+import followersIcon from "../../../common/images/followers.png";
+import followingIcon from "../../../common/images/followings.png";
 import {useAppDispatch, useAppSelector} from "../../../hooks/Hooks";
 import {
     selectUserAvatar,

@@ -1,7 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent, FC, useState} from 'react';
 import s from './Header.module.scss';
-import githubLogo from '../../common/images/icons/githubLogo.png';
-import loupe from '../../common/images/icons/loupe.png';
+import githubLogo from '../../common/images/githubLogo.png';
+import loupe from '../../common/images/loupe.png';
 import {useAppDispatch, useAppSelector} from "../../hooks/Hooks";
 import LinearProgress from "@mui/material/LinearProgress";
 import {selectIsLoading} from "../../selectors/AppSelectors";
