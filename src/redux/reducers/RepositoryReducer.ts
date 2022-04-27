@@ -48,7 +48,6 @@ export const setCurrentPage = (currentPage: number) => ({
 export const getRepositories = (username: string, currentPage: number, pageSize: number) =>
     async (dispatch: Dispatch<AppAllActionsType>) => {
         dispatch(setIsLoading(true))
-        debugger
         try {
             let response = await userAPI.getRepositories(username, currentPage, pageSize)
             dispatch(setRepositories(response.data))

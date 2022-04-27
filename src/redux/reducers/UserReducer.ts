@@ -50,7 +50,6 @@ export const getUserTC = (username: string): AppThunk =>
             let response = await userAPI.getUser(username);
             dispatch(setIsUser(true))
             dispatch(setUser(response.data))
-            debugger
             await dispatch(getRepositories(username, 1, 4))
         } catch (error) {
             dispatch(setIsUser(false))
