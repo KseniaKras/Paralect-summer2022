@@ -1,43 +1,49 @@
 
 .userInfo {
-  width: 292px;
-  margin-top: 40px;
-  margin-left: 56px;
+  min-width: 30%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
 
-  .imageBlock {
-    left: 0;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background-color: grey;
-    overflow: hidden;
-    margin-bottom: 29px;
+  .container {
+    width: 302px;
 
-    > img {
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      vertical-align: middle;
+    .imageBlock {
+      left: 0;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background-color: grey;
+      overflow: hidden;
+      margin-bottom: 29px;
+      margin-right: 96px;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        vertical-align: middle;
+      }
     }
-  }
 
-  .userName {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 33.8px;
-    text-align: left;
-    margin-bottom: 12px;
-  }
+    .userName {
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 33.8px;
+      text-align: left;
+      margin-bottom: 12px;
+    }
 
-  .login {
-    color: #0064EB;
-    font-size: 18px;
-  }
+    .login {
+      color: #0064EB;
+      font-size: 18px;
+    }
 
-  .followersBlock {
-    margin-top: 25px;
-    line-height: 24px;
+    .followersBlock {
+      margin-top: 25px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -45,30 +51,15 @@
   .userInfo {
     width: 100%;
     margin-top: 20px;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    padding: 0 20px;
 
-    .imageBlock {
-      width: 280px;
-      height: 280px;
-      margin-bottom: 20px;
-      align-self: flex-start;
-      margin-left: 20px;
-    }
-
-    .userName {
-      margin-left: 40px;
-    }
-
-    .login {
-      margin-left: 40px;
-    }
-
-    .followersBlock {
-      margin-left: 40px;
+    .container {
+      .imageBlock {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+        align-self: flex-start;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 
 .repositoriesBlock {
-  margin-left: 98px;
+  width: 68%;
   position: relative;
 
   > h2 {
@@ -12,27 +12,34 @@
   }
 
   .repositoriesItems {
+    width: 100%;
+    margin-bottom: 90px;
+
     .repository {
-      width: 100%;
+      background-color: #FFFFFF;
+      width: 94%;
       min-height: 112px;
-      padding: 24px 0;
+      margin-bottom: 24px;
+      padding: 24px 32px;
 
       > a {
         font-size: 24px;
         font-weight: 500;
         line-height: 29px;
         color: #0064EB;
-        margin-bottom: 16px;
+        display: inline-block;
+        padding-bottom: 16px;
       }
 
       > p {
         line-height: 19px;
+        font-size: 16px;
       }
     }
   }
 
   .pagination {
-    position: fixed;
+    position: absolute;
     bottom: 28.5px;
     right: 69px;
     display: inline-flex;
@@ -49,22 +56,26 @@
 
 @media (min-width: 300px) and (max-width: 770px) {
   .repositoriesBlock {
-    margin-left: 40px;
+    width: 100%;
+    padding: 0 20px;
 
     .repositoriesItems {
       margin-bottom: 90px;
 
       .repository {
         width: 100%;
-        height: auto;
-        padding: 24px 20px 24px 0;
       }
     }
 
     .pagination {
+      padding: 0 20px;
       position: absolute;
       bottom: 8px;
       right: 0;
+
+      .paginationInfoText {
+        margin-right: 7px;
+      }
     }
   }
 }

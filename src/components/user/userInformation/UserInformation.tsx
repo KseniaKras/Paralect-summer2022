@@ -36,30 +36,32 @@ export const UserInformation: FC<UserInfoPropsType> = ({login}) => {
 
     return (
         <div className={s.userInfo}>
-            <div className={s.imageBlock}>
-                <img src={userPhoto} alt=""/>
-            </div>
-            <h3 className={s.userName}>
-                {userName}
-            </h3>
-            <a href={userGithubUrl}
-               target={"_blank"}
-               rel="noreferrer"
-               className={s.login}
-            >
-                {login}
-            </a>
-            <div className={s.followersBlock}>
-                <UserFollowers
-                    image={followers}
-                    count={userFollowers}
-                    description={'followers'}
-                />
-                <UserFollowers
-                    image={followings}
-                    count={userFollowing}
-                    description={'following'}
-                />
+            <div className={s.container}>
+                <div className={s.imageBlock}>
+                    <img src={userPhoto} alt=""/>
+                </div>
+                <h3 className={s.userName}>
+                    {userName}
+                </h3>
+                <a href={userGithubUrl}
+                   target={"_blank"}
+                   rel="noreferrer"
+                   className={s.login}
+                >
+                    {login}
+                </a>
+                <div className={s.followersBlock}>
+                    <UserFollowers
+                        image={followers}
+                        count={userFollowers}
+                        description={'followers'}
+                    />
+                    <UserFollowers
+                        image={followings}
+                        count={userFollowing}
+                        description={'following'}
+                    />
+                </div>
             </div>
         </div>
     );

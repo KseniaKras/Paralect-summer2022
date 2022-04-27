@@ -1,6 +1,8 @@
 
 .userBlock {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 770px) {
